@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> <%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#" class="navbar__brand">Task App</a>
+        </div>
+    </nav>
+
+    <div class="form">
+        <div class="form__heading">
+            <h1>Say Something</h1>
+            <p class="lead">What's on your mind?</p>
+        </div>
+        <div class="form__group">
+            <input type="text" id="title" class="form__item" placeholder="Post Title">
+        </div>
+        <div class="form__group">
+            <textarea id="body" class="form__item" placeholder="Post Body"></textarea>
+        </div>
+        <input type="hidden" id value="">
+        <button class="submit">Post It</button>
+        <span class="form-end"></span>
+    </div>
+    <div class="posts" id="posts"></div>
+    <footer class="footer">
+        Microposts @copy;
+    </footer>
+</body>
+</html>
