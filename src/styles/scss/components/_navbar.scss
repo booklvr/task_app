@@ -1,0 +1,21 @@
+.navbar {
+  width: 100%;
+  background-color: lightblue;
+  position: absolute;
+  top: 0;
+  height: 4rem;
+  font-size: 2rem;
+
+  &__container {
+    padding-left: 2rem;
+  }
+
+  &__brand,
+  &__brand:link,
+  &__brand:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+  }
+
+}

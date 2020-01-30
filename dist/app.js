@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "3ceb12c62cf9ca3d21ae";
+/******/ 	var hotCurrentHash = "5eebd7ba15f59725eba2";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -12586,7 +12586,19 @@ if (typeof module.hot !== 'undefined') {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+// console.log('hi jeff')
+// import taskRoute from '../server/routes/task';
+// document.addEventListener('DOMContentLoaded', getPosts);
+// function getPosts() {
+//   fetch('http://localhost:3000/task')
+//     .then((response) => {
+//       return response.json()
+//     })
+//     .then((myJson) => {
+//       console.log(myJson)
+//     })
+//     .catch(err => console.log('fuck' + err));
+// }
 
 /***/ }),
 

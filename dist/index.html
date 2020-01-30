@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title> <%= htmlWebpackPlugin.options.title %></title>
 <link href="/style.css" rel="stylesheet"></head>
 <body>
@@ -11,21 +13,25 @@
         </div>
     </nav>
 
-    <div class="form">
-        <div class="form__heading">
-            <h1>Say Something</h1>
-            <p class="lead">What's on your mind?</p>
-        </div>
-        <div class="form__group">
-            <input type="text" id="title" class="form__item" placeholder="Post Title">
-        </div>
-        <div class="form__group">
-            <textarea id="body" class="form__item" placeholder="Post Body"></textarea>
-        </div>
-        <input type="hidden" id value="">
-        <button class="submit">Post It</button>
-        <span class="form-end"></span>
+    <div class="form__container">
+        <form action="" id="form" class="form">
+            <div class="form__heading">
+                <h2>Add a Task</h2>
+            </div>
+            <div class="form__group">
+                <label for="task" class="form__label">Task</label>
+                <input type="text" id="task" class="form__item" placeholder="Task">
+            </div>
+            <div class="form__group">
+                <label for="description" class="form__label">Description</label>
+                <textarea id="description" class="form__item" placeholder="Description"></textarea>
+            </div>
+            <input type="hidden" id="id" value="">
+            <button class="submit">Post It</button>
+            <span class="form-end"></span>
+        </form>
     </div>
+
     <div class="posts" id="posts"></div>
     <footer class="footer">
         Microposts @copy;
