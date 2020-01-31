@@ -8,7 +8,8 @@ function getPosts() {
       return response.json()
     })
     .then((myJson) => {
-      ui.showPosts(data);
+      ui.showPosts(myJson);
     })
-    .catch(err => console.log('fuck' + err));
+    .catch(err => console.log(err));
 }
+

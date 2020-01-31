@@ -1,0 +1,36 @@
+.card {
+  width: 40rem;
+  background-color: #f9fafb;
+  padding: 3rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  box-shadow:
+    -12px -12px 12px 0 rgba(255, 255, 255, 1),
+    12px 12px 12px 0 rgba(1, 1, 1, .05);
+
+  &__body {
+
+  }
+
+  &__title {
+
+  }
+
+  &__text {
+
+  }
+
+  &__link {
+    text-decoration: none;
+
+    & .fa-pencil {
+      color: blue;
+    }
+
+    & .fa-remove {
+      color: red;
+    }
+  }
+
+
+}

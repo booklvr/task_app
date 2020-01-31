@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "5eebd7ba15f59725eba2";
+/******/ 	var hotCurrentHash = "1e4748ddef9a8a5b1b03";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -12569,7 +12569,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/scss/main.scss */ "./src/styles/scss/main.scss");
 /* harmony import */ var _styles_scss_main_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_styles_scss_main_scss__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _js_app_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/app.js */ "./src/js/app.js");
-/* harmony import */ var _js_app_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_app_js__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
@@ -12583,22 +12582,69 @@ if (typeof module.hot !== 'undefined') {
 /*!***********************!*\
   !*** ./src/js/app.js ***!
   \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// console.log('hi jeff')
-// import taskRoute from '../server/routes/task';
-// document.addEventListener('DOMContentLoaded', getPosts);
-// function getPosts() {
-//   fetch('http://localhost:3000/task')
-//     .then((response) => {
-//       return response.json()
-//     })
-//     .then((myJson) => {
-//       console.log(myJson)
-//     })
-//     .catch(err => console.log('fuck' + err));
-// }
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ui__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ui */ "./src/js/ui.js");
+
+document.addEventListener('DOMContentLoaded', getPosts);
+
+function getPosts() {
+  fetch('http://localhost:3000/task').then(function (response) {
+    return response.json();
+  }).then(function (myJson) {
+    _ui__WEBPACK_IMPORTED_MODULE_0__["default"].showPosts(data);
+  })["catch"](function (err) {
+    return console.log('fuck' + err);
+  });
+}
+
+function function_name(argument) {// body...
+}
+
+/***/ }),
+
+/***/ "./src/js/ui.js":
+/*!**********************!*\
+  !*** ./src/js/ui.js ***!
+  \**********************/
+/*! exports provided: ui */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ui", function() { return ui; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var UI =
+/*#__PURE__*/
+function () {
+  function UI() {
+    _classCallCheck(this, UI);
+
+    this.post = document.querySelector('#posts');
+    this.task = document.querySelector('#task');
+    this.description = document.querySelector('#description');
+    this.idInput = document.querySelector('#id');
+    this.taskSubmit = document.querySelector('.submit');
+    this.forState = 'add';
+  }
+
+  _createClass(UI, [{
+    key: "showPosts",
+    value: function showPosts() {}
+  }]);
+
+  return UI;
+}();
+
+var ui = new UI();
 
 /***/ }),
 

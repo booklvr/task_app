@@ -8,10 +8,31 @@ class UI {
     this.forState = 'add';
   }
 
-  showPosts() {
+  showPosts(posts) {
+    let output = '';
 
+    posts.forEach((post) => {
+      output += `
+        <div class="card">
+          <div class="card__body">
+            <h4 class="card__title">${post.task}</h4>
+            <p class="card__text">${post.description}</p>
+            <a href="#" class="card__link">
+              <i class="fa fa-pencil"></i>
+            </a>
+            <a href="#" class="card__link">
+              <i class="fa fa-remove"></i>
+            </a>
+          </div>
+        </div>
+      `;
+
+    });
+    this.post.innerHTML = output;
   }
 }
 
 
-export const ui = new UI();
+const ui = new UI();
+
+export default ui;
